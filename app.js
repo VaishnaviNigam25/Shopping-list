@@ -53,5 +53,15 @@ function filterItem(e)
     var text = e.target.value.toLowerCase();
     //getting all LIs from itemlist as our search space
     var items =itemList.getElementsByTagName('li');
-    
-}
+    //converting this items(HTML collection ) to ARRAY
+    Array.from(items).forEach(function(item){
+        var itemName = item.firstChild.textContent;
+        if(itemName.toLowerCase().indexOf(text) != -1){
+          //showing all those which match the characters of text
+            item.style.display = 'block';
+        } else {
+            //HIDING OTHERS
+          item.style.display = 'none';
+        }
+      });
+    }
