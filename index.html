@@ -13,8 +13,8 @@
     <title>Shopping List</title>
   </head>
 
-  <body style="background: radial-gradient(rgb(15, 240, 7),white);">
-    <header id="main-header" class="bg-success text-white p-4 mb-3">
+  <body style="background: radial-gradient(black,white);">
+    <header id="main-header" class="bg-dark text-light p-4 mb-3">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -32,14 +32,14 @@
       </div>
     </header>
     <div class="container">
-      <div id="main" class="card card-body">
+      <div id="main" class="card card-body bg-dark text-light">
         <h2 class="title">Add to your Cart</h2>
         <form id="addForm" class="form-inline mb-3">
           <input type="text" class="form-control mr-2" id="item" />
-          <input type="submit" id="submitbtn" class="btn btn-success" value="Submit" />
+          <input type="submit" id="submitbtn" class="btn btn-danger" value="Submit" />
         </form>
         <h2 class="title">Your WishList</h2>
-        <ul id="items" class="list-group">
+        <ul id="items" class="list-group text-dark">
           <li class="list-group-item">
             Item 1<button class="btn btn-danger btn-sm float-right delete">
               X
